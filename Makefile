@@ -21,6 +21,6 @@ all: MY_CUDNN_VERSION := 7
 all: Dockerfile-h2oai-runtime-centos7.$(ARCH)
 	wget http://tomk.s3.amazonaws.com/alpha/449e758/h2oai-$(VERSION)-1.$(ARCH_SUBST).rpm
 	docker build \
-		-t h2oai-runtime-centos7-$(ARCH)-cuda$(MY_CUDA_VERSION):$(VERSION) \
+		-t opsh2oai/h2oai-runtime-centos7-$(ARCH)-cuda$(MY_CUDA_VERSION):$(VERSION) \
 		-f Dockerfile-h2oai-runtime-centos7.$(ARCH) \
 		.
