@@ -15,10 +15,11 @@ endif
 
 Dockerfile-h2oai-runtime-centos7.$(ARCH): Dockerfile-h2oai-runtime-centos7.in
 	cat $< | sed 's/FROM_SUBST/$(FROM_SUBST)/'g | sed 's/ARCH_SUBST/$(ARCH_SUBST)/g' | sed 's/VERSION_SUBST/$(VERSION)/g' > $@
-all: MY_CUDA_VERSION := 8.0
-all: MY_CUDNN_VERSION := 5
+
+all: MY_CUDA_VERSION := 9.0
+all: MY_CUDNN_VERSION := 7
 all: Dockerfile-h2oai-runtime-centos7.$(ARCH)
-	wget http://tomk.s3.amazonaws.com/alpha/449e758/h2oai-$(VERSION)-1.x86_64.rpm
+	wget http://tomk.s3.amazonaws.com/alpha/449e758/h2oai-$(VERSION)-1.$(ARCH_SUBST).rpm
 	docker build \
 		-t h2oai-runtime-centos7-$(ARCH)-cuda$(MY_CUDA_VERSION):$(VERSION) \
 		-f Dockerfile-h2oai-runtime-centos7.$(ARCH) \
