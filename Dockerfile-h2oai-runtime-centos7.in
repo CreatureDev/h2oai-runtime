@@ -3,7 +3,7 @@ FROM FROM_SUBST
 COPY h2oai-VERSION_SUBST-1.ARCH_SUBST.rpm h2oai-VERSION_SUBST-1.rpm
 
 RUN rpm -i h2oai-VERSION_SUBST-1.rpm
-RUN yum install -y boost-devel
+RUN yum install -y boost-devel default-java
 
 ENTRYPOINT /opt/h2oai/dai/run-h2oai.sh && tail -f /opt/h2oai/dai/log/h2oai.out
 
