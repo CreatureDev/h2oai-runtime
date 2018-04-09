@@ -1,10 +1,10 @@
 FROM FROM_SUBST
 
-COPY h2oai-VERSION_SUBST-1.ARCH_SUBST.rpm h2oai-VERSION_SUBST-1.rpm
+COPY dai-VERSION_SUBST-1.ARCH_SUBST.rpm dai-VERSION_SUBST-1.rpm
 
-RUN rpm -i h2oai-VERSION_SUBST-1.rpm
+RUN rpm -i dai-VERSION_SUBST-1.rpm
 RUN yum install -y boost-devel java-1.8.0-openjdk
 
-ENTRYPOINT /opt/h2oai/dai/run-h2oai.sh && tail -f /opt/h2oai/dai/log/h2oai.out
+ENTRYPOINT systemctl dai start && tail -f /opt/h2oai/dai/log/dai.out
 
 

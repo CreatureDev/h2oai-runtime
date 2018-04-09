@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: opsh2oai/h2oai-runtime-centos7-cuda9
-  tag: 1.0.25
+  repository: opsh2oai/dai-centos7-runtime
+  tag: VERSION_SUBST
   pullPolicy: IfNotPresent
 
 service:
@@ -26,7 +26,11 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
-resources: {}
+resources: 
+ limits:
+  alpha.kubernetes.io/nvidia-gpu: "GPU_SUBST"
+ requests:
+  alpha.kubernetes.io/nvidia-gpu: "GPU_SUBST"
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
