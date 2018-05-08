@@ -2,12 +2,12 @@ apiVersion: v1
 entries:
   dai-gpu:
   - apiVersion: v1
-    appVersion: 1.1.0
-    created: 2018-05-07T17:14:06.523365175-06:00
+    appVersion: 1.1.1
+    created: 2018-05-08T11:34:49.192440448-06:00
     description: DriverlessAI distribution for Kubernetes
-    digest: b6333018bb69c9648626ba047eab6b08d605b7bab3435b38a312a05c4cd48daa
+    digest: 52d3a783519c6af3ff0511373f55f284502d64d020797d3ba8fe0dfdd6983117
     name: dai-gpu
     urls:
-    - https://raw.githubusercontent.com/CreatureDev/h2oai-runtime/master/dai-gpu-1.1.1.tgz/dai-gpu-1.1.0.tgz/dai-gpu-1.1.0.tgz
-    version: 1.1.0
-generated: 2018-05-07T17:14:06.5229182-06:00
+    - https://raw.githubusercontent.com/CreatureDev/h2oai-runtime/master/dai-gpu-1.1.1.tgz/dai-gpu-1.1.1.tgz
+    version: 1.1.1
+generated: 2018-05-08T11:34:49.191919649-06:00
