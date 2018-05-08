@@ -3,7 +3,7 @@ entries:
   dai-gpu:
   - apiVersion: v1
     appVersion: 1.2.0
-    created: 2018-05-08T13:24:06.760038126-06:00
+    created: 2018-05-08T13:25:19.237516471-06:00
     description: DriverlessAI distribution for Kubernetes
     digest: 5944805337b1897f710de7b40daaa94022c19e6fc3df2b33490e8d5c966be810
     name: dai-gpu
@@ -12,8 +12,17 @@ entries:
     version: 1.2.0
   h2oai:
   - apiVersion: v1
+    appVersion: 1.2.3
+    created: 2018-05-08T13:25:19.238450466-06:00
+    description: DriverlessAI distribution for Kubernetes
+    digest: 90b943908be20dca832a7c230dd1a8f1c0b74396c0494e0757cc8643e8c67309
+    name: h2oai
+    urls:
+    - https://raw.githubusercontent.com/CreatureDev/h2oai-runtime/master/h2oai-1.2.3.tgz
+    version: 1.2.3
+  - apiVersion: v1
     appVersion: 1.2.2
-    created: 2018-05-08T13:24:06.760740118-06:00
+    created: 2018-05-08T13:25:19.23822499-06:00
     description: DriverlessAI distribution for Kubernetes
     digest: b9cfb25623390c49ac9cbc7b2921ca8925d0f3394c24dd81dcddc26d61579b04
     name: h2oai
@@ -22,7 +31,7 @@ entries:
     version: 1.2.2
   - apiVersion: v1
     appVersion: 1.2.1
-    created: 2018-05-08T13:24:06.760515041-06:00
+    created: 2018-05-08T13:25:19.238000836-06:00
     description: DriverlessAI distribution for Kubernetes
     digest: 6667c8af549ddff6dbc9ff16daabe6908e4bc368c567cebb50b234d0650a0194
     name: h2oai
@@ -31,11 +40,11 @@ entries:
     version: 1.2.1
   - apiVersion: v1
     appVersion: 1.2.0
-    created: 2018-05-08T13:24:06.760270489-06:00
+    created: 2018-05-08T13:25:19.237769672-06:00
     description: DriverlessAI distribution for Kubernetes
     digest: 125bbf39b2285fed0797c35fa481d4b804aa2f1c9bdeb812c18eb66900d5df7e
     name: h2oai
     urls:
     - https://raw.githubusercontent.com/CreatureDev/h2oai-runtime/master/h2oai-1.2.0.tgz
     version: 1.2.0
-generated: 2018-05-08T13:24:06.759537072-06:00
+generated: 2018-05-08T13:25:19.237052559-06:00
